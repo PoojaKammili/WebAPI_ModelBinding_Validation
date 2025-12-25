@@ -1,12 +1,12 @@
-WebAPI_ModelBinding_DataAnnotations_CustomValidation
+WebAPI_ModelBinding_Validation
 📘 Description
 
-This project is an ASP.NET Core Web API application that demonstrates Model Binding, Data Annotations, and Custom Validation concepts using a clean and layered architecture.
-It shows how incoming HTTP requests are bound to models, validated using built-in attributes, and extended with custom validation logic.
+This is an ASP.NET Core Web API project demonstrating Model Binding, Data Annotation validation, and Custom Validation using ValidationAttribute.
+The application exposes RESTful APIs for managing employees and ensures incoming request data is properly bound and validated before processing.
 
 🚀 Features
 
-Model Binding using:
+Demonstrates Model Binding using:
 
 [FromBody]
 
@@ -14,36 +14,30 @@ Model Binding using:
 
 [FromRoute]
 
-Validation using Data Annotations
+Input validation using Data Annotations
 
-[Required]
+Custom validation using ValidationAttribute
 
-[StringLength]
-
-[Range]
-
-[EmailAddress]
-
-Custom Validation using:
-
-Custom validation attributes
-
-IValidatableObject
-
-Automatic model state validation with [ApiController]
-
-Proper HTTP status codes and error messages
+Automatic ModelState validation
 
 Clean separation of concerns using Controller, Service, and Model layers
+
+RESTful CRUD APIs for Employee entity
 
 🧱 Tech Stack
 
 Language: C#
 
-Framework: ASP.NET Core Web API (.NET 6 / .NET 7)
+Framework: ASP.NET Core Web API (.NET 6 / .NET 7 / .NET 8)
 
-Validation: Data Annotations & Custom Validation
+Validation:
 
-Architecture: Controller–Service pattern
+Data Annotations
 
-IDE: Visual Studio
+Custom Validation Attributes
+
+Architecture: Controller → Service → Model
+
+IDE: Visual Studio / VS Code
+
+Testing Tool: Postman
